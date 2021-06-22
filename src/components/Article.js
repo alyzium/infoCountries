@@ -39,7 +39,12 @@ const Article = (props) => {
 			if (willDelete) {
 				axios.delete("http://localhost:3003/articles/" + article.id).then(window.location.reload());
 			} else {
-				swal("Your imaginary file is safe!");
+				swal({
+					title: "Information",
+					text: "This article is safe!",
+					icon: "info",
+					timer: 1300,
+				});
 			}
 		});
 	};
