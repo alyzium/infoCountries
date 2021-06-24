@@ -22,4 +22,28 @@
     }
   }
 
+  .logout-button{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin: 10px 60rem 10px;
+
+  button{
+    width: 80px;
+    height: 40px;
+    font-size: 1rem;
+    margin: 0 2px;
+    cursor: pointer;
+    border: none; 
+    border-radius: .625em;
+    background-color: $color-1;
+    transition: 0.4s;
+    cursor:pointer;
+
+    &:hover{
+      background: $color-3;
+      color: white;
+    }
+  }
+  }
 }
